@@ -14,7 +14,13 @@ This project provides an API that returns random quotes from various books. It i
 
 You can try out the API live at the following URL:
 
-[Random Book Quote API Live Demo](https://random-book-quote-api.ahmedtaher212005.workers.dev/{parameters}?{query})
+[Random Book Quote API Live Demo](https://random-book-quote-api.ahmedtaher212005.workers.dev/quote/random)
+
+### URL format
+
+```
+(https://random-book-quote-api.ahmedtaher212005.workers.dev/{parameters}?{query _if applicable_})
+```
 
 ### API Endpoints
 
