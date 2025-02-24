@@ -41,7 +41,6 @@ export default {
 		}
 
 		// Return the quote as JSON or an error message if not found
-		console.log();
 		if (responseQuote) {
 			return new Response(JSON.stringify(responseQuote), { headers: { 'Content-Type': 'application/json' } });
 		} else {
