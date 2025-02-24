@@ -8,7 +8,7 @@ export function getQuotesByText(enteredQuote: string | undefined) {
 	if (!enteredQuote) {
 		return undefined;
 	}
-	const quote = quotes.find((q) => q.text.toLowerCase().startsWith(enteredQuote.toLowerCase()));
+	const quote = quotes.filter((q) => q.text.toLowerCase().startsWith(enteredQuote.toLowerCase()));
 	return quote ? quote : undefined;
 }
 
@@ -16,7 +16,8 @@ export function getQuotesByAuthor(enteredAuthor: string | undefined) {
 	if (!enteredAuthor) {
 		return undefined;
 	}
-	const quote = quotes.find((q) => q.author.toLowerCase().startsWith(enteredAuthor.toLowerCase()));
+	const quote = quotes.filter((q) => q.author.toLowerCase().startsWith(enteredAuthor.toLowerCase()));
+	console.log(quote);
 	return quote ? quote : undefined;
 }
 
@@ -24,7 +25,7 @@ export function getQuotesByBook(enteredBook: string | undefined) {
 	if (!enteredBook) {
 		return undefined;
 	}
-	const quote = quotes.find((q) => q.book.toLowerCase().startsWith(enteredBook.toLowerCase()));
+	const quote = quotes.filter((q) => q.book.toLowerCase().startsWith(enteredBook.toLowerCase()));
 	return quote ? quote : undefined;
 }
 
@@ -52,6 +53,6 @@ export function getTodaysQuote() {
 }
 
 export function getRandomQuote() {
-	const randomIndex = Math.floor(Math.random() * 400);
+	const randomIndex = Math.floor(Math.random() * quotes.length);
 	return quotes[randomIndex];
 }
