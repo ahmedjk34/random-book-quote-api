@@ -19,7 +19,7 @@ You can try out the API live at the following URL:
 ### URL format
 
 ```
-(https://random-book-quote-api.ahmedtaher212005.workers.dev/{parameters}?{query _if applicable_})
+(https://random-book-quote-api.ahmedtaher212005.workers.dev/{parameters}?{query if applicable})
 ```
 
 ### API Endpoints
