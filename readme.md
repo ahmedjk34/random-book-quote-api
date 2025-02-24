@@ -16,10 +16,10 @@ You can try out the API live at the following URL:
 
 [Random Book Quote API Live Demo](https://random-book-quote-api.ahmedtaher212005.workers.dev/quote/random)
 
-### URL format
+### Base URL format
 
 ```
-(https://random-book-quote-api.ahmedtaher212005.workers.dev/{parameters}?{query if applicable})
+(https://random-book-quote-api.ahmedtaher212005.workers.dev
 ```
 
 ### API Endpoints
