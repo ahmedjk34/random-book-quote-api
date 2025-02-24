@@ -8,7 +8,7 @@ export function getQuotesByText(enteredQuote: string | undefined) {
 	if (!enteredQuote) {
 		return undefined;
 	}
-	const quote = quotes.find((q) => q.quote.toLowerCase().startsWith(enteredQuote.toLowerCase()));
+	const quote = quotes.find((q) => q.text.toLowerCase().startsWith(enteredQuote.toLowerCase()));
 	return quote ? quote : undefined;
 }
 

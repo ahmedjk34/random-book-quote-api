@@ -36,7 +36,7 @@ describe('Quote API worker', () => {
 	});
 
 	it('responds with a quote by text', async () => {
-		const text = quotes[0].quote.split(' ')[0];
+		const text = quotes[0].text.split(' ')[0];
 		const request = new IncomingRequest(`http://example.com/quotes?text=${text}`);
 		const ctx = createExecutionContext();
 		const response = await worker.fetch(request, env, ctx);
