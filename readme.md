@@ -19,7 +19,7 @@ You can try out the API live at the following URL:
 ### Base URL format
 
 ```
-(https://random-book-quote-api.ahmedtaher212005.workers.dev
+https://random-book-quote-api.ahmedtaher212005.workers.dev
 ```
 
 ### API Endpoints
