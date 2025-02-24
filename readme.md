@@ -10,6 +10,30 @@ This project provides an API that returns random quotes from various books. It i
 
 ## Getting Started
 
+### Live Demo
+
+You can try out the API live at the following URL:
+
+[Random Book Quote API Live Demo](https://random-book-quote-api.ahmedtaher212005.workers.dev/{parameters}?{query})
+
+### API Endpoints
+
+| Method | Endpoint      | Description                 | Query Parameters                                                                                 |
+| ------ | ------------- | --------------------------- | ------------------------------------------------------------------------------------------------ |
+| GET    | /quotes       | Returns all quotes          | `text`: Filter quotes by text. `author`: Filter quotes by author. `book`: Filter quotes by book. |
+| GET    | /quote/today  | Returns today's quote       | None                                                                                             |
+| GET    | /quote/random | Returns a random book quote | None                                                                                             |
+
+Example response for **GET /quote/random**:
+
+```json
+{
+	"quote": "To be, or not to be, that is the question.",
+	"author": "William Shakespeare",
+	"book": "Hamlet"
+}
+```
+
 ### Prerequisites
 
 - Node.js
@@ -37,26 +61,6 @@ This project provides an API that returns random quotes from various books. It i
    npm start
    ```
 2. The API will be available at `http://localhost:3000`.
-
-### API Endpoints
-
-### API Endpoints
-
-| Method | Endpoint      | Description                 | Query Parameters                                                                                 |
-| ------ | ------------- | --------------------------- | ------------------------------------------------------------------------------------------------ |
-| GET    | /quotes       | Returns all quotes          | `text`: Filter quotes by text. `author`: Filter quotes by author. `book`: Filter quotes by book. |
-| GET    | /quote/today  | Returns today's quote       | None                                                                                             |
-| GET    | /quote/random | Returns a random book quote | None                                                                                             |
-
-Example response for **GET /quote/random**:
-
-```json
-{
-	"quote": "To be, or not to be, that is the question.",
-	"author": "William Shakespeare",
-	"book": "Hamlet"
-}
-```
 
 ## Contributing
 
