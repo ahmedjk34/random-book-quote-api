@@ -24,7 +24,7 @@ export function getQuotesByBook(enteredBook: string | undefined) {
 	if (!enteredBook) {
 		return undefined;
 	}
-	const quote = quotes.find((q) => q.author.toLowerCase().startsWith(enteredBook.toLowerCase()));
+	const quote = quotes.find((q) => q.book.toLowerCase().startsWith(enteredBook.toLowerCase()));
 	return quote ? quote : undefined;
 }
 
