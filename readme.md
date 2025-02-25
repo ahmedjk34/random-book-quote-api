@@ -19,7 +19,7 @@ You can try out the API live at the following URL:
 ### Base URL format
 
 ```
-(https://random-book-quote-api.ahmedtaher212005.workers.dev
+https://random-book-quote-api.ahmedtaher212005.workers.dev
 ```
 
 ### API Endpoints
@@ -64,9 +64,9 @@ Example response for **GET /quote/random**:
 
 1. Start the server:
    ```sh
-   npm start
+   npm run dev
    ```
-2. The API will be available at `http://localhost:3000`.
+2. The API will be available at `http://localhost:8787`.
 
 ## Contributing
 
